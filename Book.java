@@ -1,12 +1,10 @@
-import java.time.LocalDate;
+public class Book {
 
-class Book {
-    public static void main(String[] args){
-        User youngerUser = new User();
+    public String title;
+    public String author;
 
-        youngerUser.name = "Gennaro Rossi";
-        youngerUser.birthDay = LocalDate.parse("1995-01-31");
-
-        System.out.printf("%s was born in %s", youngerUser.name, youngerUser.birthDay);
+    //QUESTO IMPOSTA L'ASPETTO DELL'OGGETTO BOOK
+    public String toString(){
+        return String.format("%s by %s", this.title, this.author);
     }
 }
